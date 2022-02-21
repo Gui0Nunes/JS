@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./validaForm.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="#" name="formulario" onsubmit="return valida(this);">
+        <label>Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Letras e números" />
+  
+        <label>Email</label>
+        <input type="email" name="email" id="email" placeholder="Ex.: email@email.com" />
+  
+        <label>CPF</label>
+        <input type="text" name="cpf" maxlength="11" id="cpf" placeholder="Apenas números" />
+  
+        <label>Telefone</label>
+        <input type="text" name="telefone" id="telefone"
+          placeholder="(14) 99999-9999 ou (14) 3622-9999"
+          maxlength="15" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);"
+        />
+  
+        <input type="submit" value="Enviar / Validar" />
+      </form>   
+      
+     
+      
+</body>
+</html>
